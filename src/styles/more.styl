@@ -1,0 +1,87 @@
+.more
+  min-height xm(540)
+  position relative
+  padding 2em 0 4em
+
+.slider-ctrl
+  display none
+  @media(min-width xm(860))
+    width 94%
+    display block
+    position absolute
+    transform-style preserve-3d
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    user-select none
+
+.slider-ctrl__left,
+.slider-ctrl__right
+  height xm(70)
+  width xm(70)
+  font-size xm(18)
+  padding-top .5em
+
+.slider-ctrl__left
+  transform rotate(-45deg)
+  float left
+  border-top 3px solid mid-gray
+  border-left 3px solid mid-gray
+
+.slider-ctrl__right
+  transform rotate(45deg)
+  float right
+  border-top 3px solid mid-gray
+  border-right 3px solid mid-gray
+
+// edit()
+
+.slider
+  @media(min-width xm(860))
+    position relative
+    margin-top 2em
+    col(4/5, offset: 1/10)
+    height xm(430)
+    overflow hidden
+
+
+.slider__container
+  @media(min-width xm(860))
+    position absolute
+    width 100%
+    transition transform 0.3s
+
+
+.slider__content
+  @media(min-width xm(860))
+    position absolute
+    top 0
+    left 0
+    height xm(430)
+    width 100%
+
+
+.slider__book-cover
+.slider__info
+  stack()
+  @media(min-width xm(860))
+    col(1/2, cycle: 2)
+
+.slider__info
+
+  >h4
+    font-size xm(30)
+    font-family georgia
+    font-weight 400
+    margin .5em auto
+    padding 0 1em
+
+  >p
+    font-family georgia
+    font-size xm(24)
+    color mid-gray
+
+  >a
+    display block
+    max-width xm(100)
+    margin 2em auto

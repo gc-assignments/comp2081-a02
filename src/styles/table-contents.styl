@@ -1,0 +1,38 @@
+.menu-btn,
+.table-contents
+  position fixed
+
+.menu-btn
+  font-size .8em
+  background rgba(0, 0, 0, .6)
+  bottom 1em
+  padding .5em
+  border-radius 3px
+  z-index 9999
+  @media(min-width xm(860))
+    font-size 1em
+
+.table-contents
+  z-index 999
+  overflow-y auto
+  color light
+  background rgba(0,0,0,.8)
+  width 100%
+  height 100%
+  transform translateY(-100%)
+  transition transform 0.5s
+
+  &.show-content
+    transform translateY(0)
+
+  >ul
+    margin-bottom 5em
+
+  a
+    color light
+
+
+.table-contents__chapter
+  font-family georgia
+  font-size xm(20)
+  margin .5em auto

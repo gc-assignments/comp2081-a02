@@ -1,0 +1,102 @@
+/* ==========================================================================
+   #BASE-STYLES
+   ========================================================================== */
+
+
+body
+  font-family helvetica
+  color dark-gray
+
+
+/*
+   #Typography
+   ========================================================================== */
+
+
+/* Headings */
+h1
+  font-size xm(48)
+  font-weight 400
+  color light
+
+h2
+  font-size xm(36)
+
+h3
+  font-size xm(24)
+
+
+p
+  font-family georgia
+  font-size xm(18)
+  line-height 1.5
+
+
+a
+  color $red
+  text-decoration none
+  transition color 0.1s linear
+  cursor pointer
+
+  &:active,
+  &:focus,
+  &:hover
+    color darken($red, 15%)
+
+  &:active,&:focus
+    outline none
+
+
+ul,ol
+  list-style-type none
+  margin 0
+  padding 0
+
+/*img*/.book-cover
+  width xm(360)
+
+
+/*
+   #Buttons
+   ========================================================================== */
+
+.btn
+  border-radius 3px
+  font-size xm(20)
+  color light
+  padding .6em 1.25em
+  display inline-block
+  background mid-gray
+  box-shadow 0px 2px 4px 0px rgba(0,0,0,0.5)
+
+
+
+/* Button Size */
+
+.btn--l
+  font-size xm(24)
+
+.btn--s
+  font-size xm(18)
+
+
+
+/* Button Positions */
+
+.btn--top
+.btn--bottom
+  align(horizontal)
+
+.btn--top
+  top 0
+
+.btn--bottom
+  bottom 0
+
+
+
+/* Button Styles */
+
+.btn--action
+  background $red
+

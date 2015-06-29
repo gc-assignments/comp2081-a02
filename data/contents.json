@@ -1,0 +1,86 @@
+[
+  {
+    "chapter": "A Pull of the Lever: Prefaces",
+    "id":      "leanpub-auto-a-pull-of-the-lever-prefaces"
+  },
+  {
+    "chapter": "Prelude: Values and Expressions over Coffee",
+    "id":      "leanpub-auto-prelude-values-and-expressions-over-coffee"
+  },
+  {
+    "chapter": "A Rich Aroma: Basic Numbers",
+    "id":      "leanpub-auto-a-rich-aroma-basic-numbers"
+  },
+  {
+    "chapter": "The first sip: Basic Functions",
+    "id":      "functions"
+  },
+  {
+    "chapter": "Recipes with Basic Functions",
+    "id":      "leanpub-auto-recipes-with-basic-functions"
+  },
+  {
+    "chapter": "Picking the Bean: Choice and Truthiness",
+    "id":      "leanpub-auto-picking-the-bean-choice-and-truthiness"
+  },
+  {
+    "chapter": "Composing and Decomposing Data",
+    "id":      "composing-data"
+  },
+  {
+    "chapter": "Recipes with Data",
+    "id":      "leanpub-auto-recipes-with-data"
+  },
+  {
+    "chapter": "A Warm Cup: Basic Strings and Quasi-Literals",
+    "id":      "leanpub-auto-a-warm-cup-basic-strings-and-quasi-literals"
+  },
+  {
+    "chapter": "Stir the Allongé: Objects and State",
+    "id":      "mutable"
+  },
+  {
+    "chapter": "Recipes with Objects, Mutations, and State",
+    "id":      "leanpub-auto-recipes-with-objects-mutations-and-state"
+  },
+  {
+    "chapter": "The Coffee Factory: “Object-Oriented Programming”",
+    "id":      "leanpub-auto-the-coffee-factory-object-oriented-programming"
+  },
+  {
+    "chapter": "Served by the Pot: Collections",
+    "id":      "collections"
+  },
+  {
+    "chapter": "A Coffeehouse: Symbols",
+    "id":      "symbols"
+  },
+  {
+    "chapter": "Life on the Plantation: Metaobjects",
+    "id":      "metaobjects"
+  },
+  {
+    "chapter": "Decaffeinated: Impostors",
+    "id":      "leanpub-auto-decaffeinated-impostors"
+  },
+  {
+    "chapter": "Finish the Cup: Constructors and Classes",
+    "id":      "classes"
+  },
+  {
+    "chapter": "Recipes with Constructors and Classes",
+    "id":      "leanpub-auto-recipes-with-constructors-and-classes"
+  },
+  {
+    "chapter": "Colourful Mugs: Symmetry, Colour, and Charm",
+    "id":      "leanpub-auto-colourful-mugs-symmetry-colour-and-charm"
+  },
+   {
+    "chapter": "Con Panna: Composing Class Behaviour",
+    "id":      "class-mixins"
+  },
+   {
+    "chapter": "The Golden Crema",
+    "id":      "leanpub-auto-the-golden-crema"
+  }
+]

@@ -1,0 +1,90 @@
+/*
+   #LANDING SECTION
+   ========================================================================== */
+
+
+.landing-page
+  background url('../img/main_bg.jpg')
+  // background light
+  background-size cover
+  min-height 100vh
+  padding 2em
+  text-align center
+
+
+
+/* Landing Heading */
+.h1--landing
+  margin-bottom 7vh
+
+  >span
+    color $red
+
+
+/* Landing Row */
+.row--landing
+  margin-bottom 3em
+  cf()
+  @media(min-width xm(860))
+
+    @media(min-height xm(800))
+      padding 0 2em
+      width 90%
+      max-width xm(1280)
+      align()
+
+
+
+/* Book Cover */
+.book-cover--l
+  width xm(360)
+  max-width 100%
+
+
+
+/* Landing Right Column */
+.page-action
+  height xm(466)
+  position relative
+
+
+
+/* Quotes */
+.quotes
+  font-size 0.8em
+  color light
+  padding 10em 2em
+  opacity 1
+  transition opacity 0.5s
+  @media(min-width xm(860))
+    padding 6em 2em
+    font-size 1em
+
+  &.fade-out
+    opacity 0
+
+  &::before
+  &::after
+    position absolute
+    transform-style preserve-3d
+    top 50%
+    transform translateY(-50%)
+    font-size xm(72)
+    font-weight 300
+    font-family georgia
+
+  &::before
+    content "{"
+    color $orange
+    left 0
+
+  &::after
+    content "}"
+    right 0
+
+  >p
+    font-size xm(24)
+
+
+
+

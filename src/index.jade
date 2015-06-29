@@ -1,0 +1,78 @@
+extends ./layouts/main.jade
+
+block title
+  title Book: CSS Guidelines
+
+block content
+  //- Landing Section
+  .landing-page
+    .container
+      h1.h1--landing JavaScript Allongé, the "
+        span Six
+        | " Edition
+      .row--landing
+        .col-half
+          img.book-cover--l(src="img/book_cover_l.jpg", alt="Book Cover for JavaScript Allongé Six Edition large")
+        .col-half.page-action
+          a.btn.btn--top(href="https://leanpub.com/javascriptallongesix/read") Read Online
+          blockquote.quotes(ng-class="{ 'fade-out': vm.animQuote }")
+            p {{vm.quote.content}}
+            p —{{vm.quote.author}}
+          a.btn.btn--action.btn--bottom(href="https://leanpub.com/javascriptallongesix") Buy the Book
+
+
+
+  //- About Section
+  .container
+    .row.about
+      .about-book
+        h2.text-center About the Book
+        a(ng-click="vm.toggleMenu()")
+          img.book-cover--s(src="img/book_cover_l.jpg", alt="Book Cover for JavaScript Allongé Six Edition small")
+        h3.text-center(ng-click="vm.toggleMenu()") View Table of Contents
+        .text-center
+          p Programming with Functions in ECMAScript 2015
+          p A long pull of functions, combinators, & decorators, updated to include the latest ES-6 features
+      .about-author
+        h2.text-center About the Author
+        img.author-pic(src="img/author_pic.png", alt="Picture of Author Reg Braithwaite")
+        h3.text-center Reg "raganwald" Braithwaite
+        div
+          p When he's not shipping CoffeeScript, JavaScript, Ruby, and Java applications scaling out to millions of users, Reg "Raganwald" Braithwaite creates programming libraries such as Allong.es, Method Combinators, Katy, JQuery Combinators, YouAreDaChef, andand, and others.
+          p He writes primarily about programming. Find out more on his
+            a(href="http://braythwayt.com")  home page.
+
+
+
+  //- From the Book Section
+  .exerpt.container
+    h1.text-center From the Book
+    .exerpt__content.row
+      p JavaScript Allongé is a book about thinking about programs
+      p JavaScript Allongé is a book about programming with functions. From functions flow many ideas, from decorators to methods to delegation to mixins, and onwards in so many fruitful directions.
+      p The focus in this book on the underlying ideas, what we might call the fundamentals, and how they combine to form new ideas. The intention is to improve the way we think about programs. That’s a good thing.
+      p But while JavaScript Allongé attempts to be provocative, it is not prescriptive. There is absolutely no suggestion that any of the techniques shown here are the only way to do something, the best way, or even an acceptable way to write programs that are intended to be used, read, and maintained by others.
+      .exerpt__from
+        p — What JavaScript Allongé is. And isn’t.
+
+
+
+  //- More from Author Section
+  .more.container.text-center
+    h2 More From Reg "raganwal" Braithwaite
+    .slider.row
+      .slider__container(ng-style="vm.slideStyle")
+        .slider__content(
+          ng-repeat="(key, book) in vm.moreBooks"
+          ng-style="vm.slideContentStyle(key)"
+        )
+          .slider__book-cover
+            img(ng-src="img/{{book.cover}}", alt="Book cover of {{book.title}}")
+          .slider__info
+            h4 {{book.title}}
+            p {{book.brief}}
+            a.btn.btn--s(ng-href="https://leanpub.com/{{book.urn}}/read") Read Online
+            a.btn.btn--action.btn--s(ng-href="https://leanpub.com/{{book.urn}}") Buy the Book
+    .slider-ctrl
+      a.slider-ctrl__left(ng-click="vm.prevSlide()") Prev
+      a.slider-ctrl__right(ng-click="vm.nextSlide()") Next

@@ -1,0 +1,11 @@
+a.menu-btn.align-h(
+  ng-click="vm.toggleMenu()"
+  )
+  img(src="img/menu_btn.svg", alt="menu button icon")
+
+nav.table-contents(ng-class="{ 'show-content': vm.menuState }")
+  h2.text-center: a(href="https://leanpub.com/javascriptallongesix/read") Table of Contents
+  ul.text-center
+    li.table-contents__chapter(ng-repeat="content in vm.contents")
+      a(ng-href="https://leanpub.com/javascriptallongesix/read#{{content.id}}")
+        | {{content.chapter}}

@@ -1,0 +1,27 @@
+[
+  // ,
+  {
+    "title": "What I've Learned From Failure",
+    "cover": "other_book_02.jpg",
+    "brief": "A quarter-century of experience shipping software, distilled into fixnum bittersweet essays",
+    "urn": "shippingsoftware"
+  },
+  {
+    "title": "CoffeeScript Ristretto",
+    "cover": "other_book_03.jpg",
+    "brief": "An intense cup of code",
+    "urn": "coffeescript-ristretto"
+  },
+  {
+    "title": "How to Do What You Love & Earn What You’re Worth as a Programmer",
+    "cover": "other_book_04.jpg",
+    "brief": "",
+    "urn": "dowhatyoulove"
+  },
+  {
+    "title": "JavaScript Spessore",
+    "cover": "other_book_05.png",
+    "brief": "Objects, Metaobjects, & Protocols in ES-5",
+    "urn": "javascript-spessore"
+  }
+]

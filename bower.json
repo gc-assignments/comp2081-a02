@@ -1,0 +1,22 @@
+{
+  "name": "lodepen",
+  "version": "0.1.0",
+  "authors": [
+    "Slevin Zhang <4ce111@gmail.com>"
+  ],
+  "description": "local codepen",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jeet": "~6.1.2"
+  },
+  "dependencies": {
+    "angular": "~1.4.1"
+  }
+}
