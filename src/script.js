@@ -47,6 +47,7 @@
 
     function setSlideStyle() {
       vm.slideStyle = {
+        '-webkit-transform': 'translateX(' + slideKey*-100 + '%)',
         transform: 'translateX(' + slideKey*-100 + '%)'
       };
     }
@@ -54,7 +55,10 @@
     function slideContentStyle(key) {
       var style;
       screenWidth > 860 ?
-        style = { transform: 'translateX(' + key*100 + '%)' } :
+        style = {
+          '-webkit-transform': 'translateX(' + key*100 + '%)',
+          transform: 'translateX(' + key*100 + '%)'
+        } :
         style = { position: 'relative' };
       return style;
     }
